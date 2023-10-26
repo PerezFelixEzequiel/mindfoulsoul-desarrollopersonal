@@ -173,7 +173,6 @@ h2 {
     box-sizing: border-box;
     font-size: 17px;
     border: none;
-    background-color: ;
 }
 
 textarea {
@@ -211,10 +210,6 @@ footer p a {
 }
 
 @media screen and (max-width: 768px) {
-
-
-    /* /* section 
-    /* section blog  */
     .section-blog {
         display: grid;
         grid-template-columns: 1fr;
@@ -227,7 +222,7 @@ footer p a {
             "card-1";
     }
 
-    section inicio .main-inicio {
+    section .main-inicio {
         display: flex;
         justify-content: center;
         align-items: center;
