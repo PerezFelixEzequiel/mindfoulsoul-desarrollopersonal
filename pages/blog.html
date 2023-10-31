@@ -4,65 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Blog</title>
 </head>
 
 <body>
     <header>
         <a href="../index.html" class="ancla-logo-titulo">
-            <img class="logo" src="../assets/brain-engine-svgrepo-com.svg" alt="logo">
+            <img class="logo" src="../assets/cerebro.svg" alt="logo">
             <h1 class="titulo">Mindfoulsoul</h1>
         </a>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="./blog.html"> Blog </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> sobre Nosotros </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contacto.html"> Contacto </a>
+                <a class="nav-link" href="blog.html"> Blog </a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="Recursos.html" role="button"
                     aria-expanded="false">Recursos</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Tracker de Habitos</a></li>
+                    <li><a class="dropdown-item" href="tracker-de-habitos.html">Tracker de Habitos</a></li>
+                    <li><a class="dropdown-item" href="libros.html">libros</a></li>
                 </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html"> Contacto </a>
             </li>
         </ul>
     </header>
     <main class="main-blog">
-        <div class="titulo-blog">
+        <section class="section-intro">
             <h2>Blog</h2>
-        </div>
+            <div class="text">
+                <div class="d-flex" style="height: 200px;">
+                    <div class="vr"></div>
+                </div>
+                <p class="blog-intro">
+                    ¡Bienvenido a mi blog de desarrollo personal! Aquí encontrarás artículos inspiradores y prácticos
+                    que te
+                    ayudarán a
+                    crecer, evolucionar y alcanzar tu mejor versión. ¡Explora, aprende y crece junto a nosotros!.
+                </p>
+            </div>
+        </section>
         <section class="section-blog">
             <div class=" card-1 card ">
                 <img src="../assets/lenguaje-corporal.jpg" alt="">
-                <a href="">Todo Lo Que Deberías Saber Sobre el Lenguaje Corporal</a>
+                <a href="https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are?language=es"
+                    target="_blank">Todo
+                    Lo Que Deberías Saber Sobre el Lenguaje Corporal</a>
             </div>
             <div class="card-2 card ">
                 <img src="../assets/seguridad-interna-hombre.jpg" alt="">
-                <a href="">Cómo tener más confianza y seguridad en uno mismo</a>
+                <a href="https://www.nytimes.com/es/2019/06/07/espanol/como-mejorar-tu-confianza.html"
+                    target="_blank">Cómo tener más
+                    confianza y seguridad en uno mismo</a>
             </div>
             <div class="card-3 card ">
                 <img src="../assets/motivacion.jpg" alt="">
-                <a href="">Motivación: 8 Claves Científicas Para No Rendirte Jamás </a>
+                <a href="https://hipertextual.com/2017/01/sobre-la-motivacion#:~:text=Los%20cient%C3%ADficos%20definen%20la%20motivaci%C3%B3n,significa%20'causa%20del%20movimiento'."
+                    target="_blank">Motivación: 8 Claves Científicas Para No Rendirte Jamás </a>
             </div>
             <div class="card-4 card">
                 <img src="../assets/emociones.jpg" alt="">
-                <a href="">Cómo Controlar las Emociones: 10 Técnicas que Funcionan</a>
+                <a href="https://psicologiaymente.com/psicologia/como-controlar-emociones" target="_blank">Cómo
+                    Controlar las Emociones: 10 Técnicas que Funcionan</a>
             </div>
             <div class="card-5 card">
                 <img src="../assets/autocoaching.jpg" alt="">
-                <a href="">10 claves prácticas para mejorar tu vida con el autocoaching</a>
+                <a href="https://innov-arte.com/articulos-coaching-pnl-hipnosis-regresiva/43-coaching-pnl/125-10-claves-para-mejorar-tu-autoestima-con-coaching-pnl.html"
+                    target="_blank">10 claves prácticas para mejorar tu vida con el autocoaching</a>
             </div>
             <div class="card-6 card">
                 <img src="../assets/sociable.jpg" alt="">
-                <a href="">10 claves científicas para ser más sociable y superar la timidez</a>
+                <a href="https://psicologiaymente.com/social/trucos-mas-sociable-divertido" target="_blank">10 claves científicas para ser más sociable y superar la timidez</a>
             </div>
         </section>
     </main>
