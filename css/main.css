@@ -71,7 +71,7 @@ header .nav-tabs .dropdown .dropdown-menu a:hover {
 
 /*estilos de los main*/
 /*main inicio*/
-main .section-inicio {
+.main-inicio .section-inicio {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -81,17 +81,16 @@ main .section-inicio {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  border: solid 1px beige;
   position: relative;
 }
-main .section-inicio .vista-previa {
+.main-inicio .section-inicio .vista-previa {
   font-size: 12px;
   opacity: 0.3;
   position: absolute;
   top: 250px;
   left: 100px;
 }
-main .section-inicio .carousel {
+.main-inicio .section-inicio .carousel {
   width: 400px;
   justify-self: center;
   align-self: center;
@@ -99,11 +98,60 @@ main .section-inicio .carousel {
   border-radius: 6px;
   overflow: hidden;
 }
-main .section-inicio .carousel img {
+.main-inicio .section-inicio .carousel img {
   filter: blur(1.5px);
 }
-main .section-inicio .div-text {
+.main-inicio .section-inicio .div-text {
   padding: 10px;
+}
+.main-inicio .section-recursos {
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  height: 100%;
+  margin: 100px;
+}
+.main-inicio .section-recursos h2 {
+  background-color: transparent;
+  padding: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.main-inicio .section-recursos .section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 40px;
+}
+.main-inicio .section-recursos .section-cards .card-recursos {
+  background-color: #969689;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+.main-inicio .section-recursos .section-cards .card-recursos:hover {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  transform: translate(-3%);
+}
+.main-inicio .section-recursos .section-cards .card-recursos a {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  text-decoration: none;
+}
+.main-inicio .section-recursos .section-cards .card-recursos a img {
+  height: 70px;
+  margin: 10px;
+}
+.main-inicio .section-recursos .section-cards .card-recursos a p {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  color: #161b22;
 }
 
 /* main blog */
@@ -111,13 +159,19 @@ main .section-inicio .div-text {
   margin: 30px 10px 0px 30px;
   height: 200px;
 }
-.main-blog .section-intro h2 {
-  font-size: 50px;
+.main-blog .section-intro .titulo-blog {
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
 }
 .main-blog .section-intro .text {
   display: flex;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .main-blog .section-intro .text .blog-intro {
   height: 100%;
@@ -206,6 +260,7 @@ main .section-inicio .div-text {
 
 /*main del tracker de habitos*/
 .main-tracker .section-tracker h2 {
+  margin: 20px;
   display: inline-block;
   margin: 30px;
   padding: 10px;
@@ -230,6 +285,9 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+  header .nav-tabs {
+    width: 100%;
+  }
   /* main blog */
   .main-blog .section-blog {
     display: grid;
@@ -240,25 +298,40 @@ footer a {
   /*main inicio*/
   .main-inicio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .main-inicio .section-inicio {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 380px;
+    height: 930px;
+    padding: 15px;
+    position: relative;
   }
   .main-inicio .section-inicio .carousel {
     width: 100%;
     order: 1;
+    border: none;
   }
-  .main-inicio .section-inicio .div-text p {
-    font-size: 10px;
+  .main-inicio .section-inicio .div-text h2 {
+    text-align: center;
+  }
+  .main-inicio .section-inicio .div-text .parrafo-inicio {
+    font-size: 20px;
+    color: #969689;
+    margin: 90px 0px;
+  }
+  .main-inicio .section-inicio .vista-previa {
+    position: absolute;
+    top: 798px;
+    left: 20px;
   }
   /*main contacto*/
   .main-contacto form {
     width: auto;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

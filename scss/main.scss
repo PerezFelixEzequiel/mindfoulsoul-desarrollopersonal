@@ -90,7 +90,7 @@ header {
 
 /*estilos de los main*/
 /*main inicio*/
-main {
+.main-inicio {
     .section-inicio {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -101,7 +101,6 @@ main {
         background-color: #161b22;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
-        border: solid 1px beige;
         position: relative;
 
         .vista-previa {
@@ -130,6 +129,64 @@ main {
             padding: 10px;
         }
     }
+
+    .section-recursos {
+        background-color: #161b22;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        height: 100%;
+        margin: 100px;
+
+        h2 {
+            background-color: transparent;
+            padding: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 40px;
+
+            .card-recursos {
+                background-color: #969689;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                opacity: 0.7;
+                border-radius: 10px;
+                width: 300px;
+                height: 100px;
+
+                &:hover {
+                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+                    transform: translate(-3%);
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                    text-decoration: none;
+
+                    img {
+                        height: 70px;
+                        margin: 10px;
+                    }
+
+                    p {
+                        position: relative;
+                        top: 10px;
+                        font-size: 30px;
+                        color: #161b22;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 /* main blog */
@@ -138,14 +195,20 @@ main {
         margin: 30px 10px 0px 30px;
         height: 200px;
 
-        h2 {
-            font-size: 50px;
+        .titulo-blog {
+            background-color: #161b22;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
         }
 
         .text {
             display: flex;
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 0px;
 
             .blog-intro {
                 height: 100%;
@@ -252,6 +315,7 @@ main {
 .main-tracker {
     .section-tracker {
         h2 {
+            margin: 20px;
             display: inline-block;
             margin: 30px;
             padding: 10px;
@@ -281,6 +345,14 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+
+
+    header{
+        .nav-tabs{
+            width: 100%;
+        }
+    }
+
     /* main blog */
     .main-blog {
         .section-blog {
@@ -297,27 +369,51 @@ footer {
     }
 
     /*main inicio*/
+
+
+
+
     .main-inicio {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
 
         .section-inicio {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 380px;
+            height: 930px;
+            padding: 15px;
+            position: relative;
+
 
             .carousel {
                 width: 100%;
-                order: 1;
+               order: 1;
+               border: none;
             }
 
             .div-text {
-                p {
-                    font-size: 10px;
+                h2{
+                    text-align: center;
+                }
+                .parrafo-inicio {
+                    font-size: 20px;
+                    color: #969689;
+                    margin: 90px 0px;
                 }
             }
+            .vista-previa {
+                position: absolute;
+                top: 798px;
+                left: 20px;
+            }
         }
+
     }
 
     /*main contacto*/
