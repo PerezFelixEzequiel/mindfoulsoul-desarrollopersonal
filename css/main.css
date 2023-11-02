@@ -40,7 +40,7 @@ header .ancla-logo-titulo .titulo {
 header .nav-tabs {
   width: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 header .nav-tabs .nav-link {
   border: none;
@@ -49,22 +49,6 @@ header .nav-tabs .nav-link {
   font-size: 15px;
 }
 header .nav-tabs .nav-link:hover {
-  background-color: #969689;
-  color: rgb(75, 75, 75);
-}
-header .nav-tabs .dropdown {
-  position: relative;
-  left: 10px;
-}
-header .nav-tabs .dropdown .dropdown-menu {
-  background-color: #161b22;
-  border: none;
-}
-header .nav-tabs .dropdown .dropdown-menu a {
-  color: #969689;
-  background-color: transparent;
-}
-header .nav-tabs .dropdown .dropdown-menu a:hover {
   background-color: #969689;
   color: rgb(75, 75, 75);
 }
@@ -104,55 +88,6 @@ header .nav-tabs .dropdown .dropdown-menu a:hover {
 .main-inicio .section-inicio .div-text {
   padding: 10px;
 }
-.main-inicio .section-recursos {
-  background-color: #161b22;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  height: 100%;
-  margin: 100px;
-}
-.main-inicio .section-recursos h2 {
-  background-color: transparent;
-  padding: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
-.main-inicio .section-recursos .section-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  padding: 40px;
-}
-.main-inicio .section-recursos .section-cards .card-recursos {
-  background-color: #969689;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  opacity: 0.7;
-  border-radius: 10px;
-  width: 300px;
-  height: 100px;
-}
-.main-inicio .section-recursos .section-cards .card-recursos:hover {
-  box-shadow: 5px 5px 20px rgb(0, 0, 0);
-  transform: translate(-3%);
-}
-.main-inicio .section-recursos .section-cards .card-recursos a {
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  align-items: center;
-  text-decoration: none;
-}
-.main-inicio .section-recursos .section-cards .card-recursos a img {
-  height: 70px;
-  margin: 10px;
-}
-.main-inicio .section-recursos .section-cards .card-recursos a p {
-  position: relative;
-  top: 10px;
-  font-size: 30px;
-  color: #161b22;
-}
 
 /* main blog */
 .main-blog .section-intro {
@@ -176,12 +111,7 @@ header .nav-tabs .dropdown .dropdown-menu a:hover {
 .main-blog .section-intro .text .blog-intro {
   height: 100%;
   font-size: 25px;
-  margin: 0;
-}
-.main-blog .section-intro .text .vr {
-  width: 3px;
-  height: 730px;
-  color: beige;
+  margin: 20px;
 }
 .main-blog .section-blog {
   display: grid;
@@ -191,7 +121,7 @@ header .nav-tabs .dropdown .dropdown-menu a:hover {
   gap: 20px;
   justify-items: center;
   align-items: center;
-  margin: 0px 50px 50px 50px;
+  margin: 0px 50px 0px 50px;
 }
 .main-blog .section-blog .card {
   width: 100%;
@@ -215,6 +145,20 @@ header .nav-tabs .dropdown .dropdown-menu a:hover {
   margin: 5px;
   padding: 4px;
   color: rgb(129, 126, 126);
+}
+.main-blog .section-blog-libros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main-blog .section-blog-libros .card-libros {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 20px;
+}
+.main-blog .section-blog-libros .card-libros img {
+  height: 300px;
 }
 
 /*main contacto*/
@@ -258,16 +202,55 @@ header .nav-tabs .dropdown .dropdown-menu a:hover {
   padding: 20px;
 }
 
-/*main del tracker de habitos*/
-.main-tracker .section-tracker h2 {
-  margin: 20px;
-  display: inline-block;
-  margin: 30px;
-  padding: 10px;
-  font-size: 50px;
+/*main recursos*/
+.main-recursos .section-recursos {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  height: 100%;
+  margin: 100px;
+}
+.main-recursos .section-recursos h2 {
+  background-color: transparent;
+  padding: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.main-recursos .section-recursos .section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 40px;
+}
+.main-recursos .section-recursos .section-cards .card-recursos {
+  background-color: #969689;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+.main-recursos .section-recursos .section-cards .card-recursos:hover {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+  transform: translate(-3%);
+}
+.main-recursos .section-recursos .section-cards .card-recursos a {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  text-decoration: none;
+}
+.main-recursos .section-recursos .section-cards .card-recursos a img {
+  height: 70px;
+  margin: 10px;
+}
+.main-recursos .section-recursos .section-cards .card-recursos a p {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  color: #161b22;
 }
 
 /*estilos del footer*/
