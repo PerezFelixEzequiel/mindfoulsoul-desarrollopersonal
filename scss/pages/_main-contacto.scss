@@ -1,0 +1,45 @@
+/*Estilos-Main-Contacto*/
+.main-contacto {
+    margin: 50px;
+
+    form {
+        width: 450px;
+        margin: auto;
+        background: none;
+        border: solid 1px beige;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+        border: solid 0.1px;
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .input-form {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+            border: solid 0.1px;
+            background-color: #242323;
+        }
+
+        textarea {
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+
+        .boton {
+            border: solid 1px;
+            background-color: #242323;
+            padding: 20px;
+        }
+    }
+}

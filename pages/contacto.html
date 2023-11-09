@@ -13,20 +13,68 @@
 
 <body>
     <header>
-        <a href="../index.html" class="ancla-logo-titulo">
-            <img class="logo" src="../assets/cerebro.svg" alt="logo">
+        <a href="./index.html" class="ancla-logo-titulo">
+            <img class="logo" src="./assets/cerebro.svg" alt="logo">
             <h1 class="titulo">Mindfoulsoul</h1>
         </a>
+        <div class="navbar-conteiner">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="hamburguer-nav-container">
+                    <ul class="hamburguer-nav nav-tabs">
+                        <li class=" nav-item">
+                            <a class="nav-link" href="./pages/blog.html"> Blog </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Recursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Habitos</a></li>
+                                <li><a class="dropdown-item" href="#">Lectura</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio</a></li>
+                                <li><a class="dropdown-item" href="#">Journal</a></li>
+                                <li><a class="dropdown-item" href="#">Meditacion</a></li>
+                                <li><a class="dropdown-item" href="#">Alimentacion</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html"> Contacto </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="hamburguer-menu navbar navbar-dark --bs-body-bg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <img class="logo" src="./assets/cerebro.svg" alt="logo">
+                    </button>
+                </div>
+            </nav>
+        </div>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="blog.html"> Blog </a>
+                <a class="nav-link" href="./pages/blog.html"> Blog </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Recursos
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Habitos</a></li>
+                    <li><a class="dropdown-item" href="#">Lectura</a></li>
+                    <li><a class="dropdown-item" href="#">Ejercicio</a></li>
+                    <li><a class="dropdown-item" href="#">Journal</a></li>
+                    <li><a class="dropdown-item" href="#">Meditacion</a></li>
+                    <li><a class="dropdown-item" href="#">Alimentacion</a></li>
+                </ul>
+            </li>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="recursos.html"> Recursos </a>
-            </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html"> Contacto </a>
+                <a class="nav-link" href="./pages/contacto.html"> Contacto </a>
             </li>
         </ul>
     </header>

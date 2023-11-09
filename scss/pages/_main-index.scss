@@ -1,0 +1,131 @@
+/*Estilos-MainIndex*/
+.main-inicio {
+    .section-inicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 100px;
+        background-color: nth($list: $colores, $n: 2);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        position: relative;
+
+        .carousel {
+            width: 400px;
+            justify-self: center;
+            align-self: center;
+            border: 1px solid #31384A;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .div-text {
+            padding: 10px;
+        }
+    }
+
+    .section-Blog {
+        margin: 100px;
+        background-color: nth($list: $colores, $n: 2);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+
+        h2 {
+            background-color: transparent;
+            padding: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .div-text {
+            padding: 40px;
+            display: flex;
+            gap: 20px;
+            position: relative;
+
+            p {
+                padding: 10px;
+            }
+
+            video {
+                width: 1500px;
+                height: 100%;
+                justify-self: center;
+                align-self: center;
+                border: 1px solid #31384A;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+
+
+            .vista-previa {
+                font-size: 12px;
+                opacity: 0.3;
+                position: absolute;
+                top: 240px;
+                left: 820px;
+            }
+        }
+
+    }
+
+    .section-recursos {
+        background-color: nth($list: $colores , $n: 2);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        height: 100%;
+        margin: 100px;
+
+        h2 {
+            background-color: transparent;
+            padding: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 40px;
+
+            .card-recursos {
+                background-color: #969689;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                opacity: 0.7;
+                border-radius: 10px;
+                width: 300px;
+                height: 100px;
+
+                &:hover {
+                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+                    transform: translate(-3%);
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                    text-decoration: none;
+
+                    img {
+                        height: 70px;
+                        margin: 10px;
+                    }
+
+                    p {
+                        position: relative;
+                        top: 10px;
+                        font-size: 30px;
+                        color: nth($list: $colores, $n: 2);
+                    }
+                }
+            }
+
+        }
+    }
+}

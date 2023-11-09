@@ -1,0 +1,191 @@
+/*Estilos-Movile*/
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        position: relative;
+        height: 70px;
+
+
+        .navbar-conteiner {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+
+
+            .collapse {
+                z-index: 1;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    background-color: nth($list: $colores, $n: 2);
+                    opacity: 0.96;
+
+                    .hamburguer-nav {
+                        border: none;
+
+                        .nav-item {
+                            padding: 2rem;
+                            display: flex;
+                            justify-content: center;
+                            list-style: none;
+                        }
+
+                    }
+                }
+            }
+
+            .hamburguer-menu {
+                display: block;
+                padding: 0;
+                margin: 7px;
+
+                .container-fluid {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+
+                    .navbar-toggler {
+                        border: none;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+
+                        .logo {
+                            position: relative;
+                            left: 10px;
+                            width: 40px;
+                            height: 40px;
+                            filter: drop-shadow(-4px -5px 8px #000000);
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        .nav {
+            display: none;
+        }
+
+
+        .ancla-logo-titulo {
+            display: none;
+        }
+    }
+
+
+
+    /* main blog */
+    .main-blog {
+        .section-blog {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "card-1"
+                "card-1"
+                "card-1"
+                "card-1"
+                "card-1"
+                "card-1";
+        }
+    }
+
+    /*main inicio*/
+    .main-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .section-inicio {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 300px;
+            height: 700px;
+            padding: 15px;
+            position: relative;
+
+
+            .carousel {
+                width: 100%;
+                order: 1;
+                border: none;
+            }
+
+            .div-text {
+                h2 {
+                    text-align: center;
+                }
+
+                .parrafo-inicio {
+                    font-size: 15px;
+                    color: #969689;
+                    margin: 90px 0px;
+                }
+            }
+
+        }
+
+        .section-Blog {
+            width: 300px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            margin: 100px;
+
+            .titulo-blog-inicio {
+                h2 {
+                    text-align: center;
+                }
+            }
+
+
+            .div-text {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: space-around;
+                position: relative;
+
+                p {
+                    font-size: 15px;
+                }
+
+                video {
+                    width: 100%;
+                }
+
+                .vista-previa {
+                    position: absolute;
+                    top: 580px;
+                    left: 30px;
+                }
+            }
+        }
+
+        .section-recursos {
+            width: 300px;
+
+            h2 {
+                text-align: center;
+            }
+
+        }
+    }
+
+    /*main contacto*/
+    .main-contacto {
+        form {
+            width: auto;
+        }
+    }
+}
