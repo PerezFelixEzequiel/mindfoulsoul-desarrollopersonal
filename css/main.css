@@ -219,6 +219,7 @@ header .ancla-logo-titulo .titulo {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   background-color: #161b22;
   overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 .main-blog .section-blog .card:hover {
   box-shadow: 5px 5px 20px rgb(0, 0, 0);
@@ -238,17 +239,62 @@ header .ancla-logo-titulo .titulo {
 }
 .main-blog .section-blog-libros {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .main-blog .section-blog-libros .card-libros {
+  position: relative;
+  width: 260px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.main-blog .section-blog-libros .card-libros:hover {
+  transform: scale(1.05);
+}
+.main-blog .section-blog-libros .card-libros a img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+.main-blog .section-blog-libros .card-libros .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
   display: flex;
   flex-direction: column;
-  width: 200px;
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
 }
-.main-blog .section-blog-libros .card-libros img {
-  height: 300px;
+.main-blog .section-blog-libros .card-libros .overlay p {
+  margin: 0;
+  color: #fff;
+}
+.main-blog .section-blog-libros .card-libros .overlay:hover {
+  opacity: 1;
+}
+.main-blog .section-blog-libros .card-libros .buy-link {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #161b22;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.main-blog .section-blog-libros .card-libros .buy-link:hover {
+  background-color: #161b22;
+  opacity: 0.2;
 }
 
 /*Estilos-MainRecursos*/
@@ -448,6 +494,4 @@ footer a {
   .main-contacto form {
     width: auto;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
