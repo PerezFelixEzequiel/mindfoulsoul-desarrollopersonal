@@ -300,8 +300,130 @@ header .ancla-logo-titulo .titulo {
 /*Estilos-MainRecursos*/
 .main-recursos {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr 2fr;
   grid-template-areas: "section-1 section-2";
+}
+.main-recursos .section-1 {
+  margin: 20px;
+}
+.main-recursos .section-1 .section-intro h2 {
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.main-recursos .section-1 .section-intro .parrafo-intro {
+  font-size: 20px;
+}
+.main-recursos .section-1 .section-intro img {
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.main-recursos .section-1 .articulo-1 h3 {
+  margin: 20px 0px 0px 10px;
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.main-recursos .section-1 .articulo-1 p {
+  margin: 10px;
+  font-size: 20px;
+}
+.main-recursos .section-1 .articulo-2 h3 {
+  margin: 20px 0px 20px 10px;
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.main-recursos .section-1 .articulo-2 img {
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.main-recursos .section-1 .articulo-2 ul li {
+  padding: 10px;
+}
+.main-recursos .section-1 .articulo-3 h3 {
+  margin: 20px 0px 20px 10px;
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.main-recursos .section-1 .articulo-3 p {
+  margin: 10px;
+  font-size: 20px;
+}
+.main-recursos .section-1 .articulo-3 ul li {
+  padding: 10px;
+}
+.main-recursos .section-1 .articulo-4 h3 {
+  margin: 20px 0px 20px 10px;
+  background-color: #161b22;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.main-recursos .section-1 .articulo-4 img {
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.main-recursos .section-1 .articulo-4 p {
+  margin: 10px;
+  font-size: 20px;
+}
+.main-recursos .section-2 {
+  margin: 90px 10px;
+}
+.main-recursos .section-2 .indice-tematico {
+  position: sticky;
+  top: 20px;
+  background-color: #969689;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 10px;
+}
+.main-recursos .section-2 .indice-tematico h4 {
+  padding: 10px;
+  color: #161b22;
+  text-decoration: underline;
+}
+.main-recursos .section-2 .indice-tematico ol li {
+  padding: 10px;
+  color: #161b22;
+}
+.main-recursos .section-2 .indice-tematico ol li a {
+  color: #161b22;
+}
+.main-recursos .section-2 .sobre-el-autor {
+  position: sticky;
+  top: 300px;
+  bottom: 20px;
+  background-color: #969689;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.main-recursos .section-2 .sobre-el-autor h4 {
+  color: #161b22;
+}
+.main-recursos .section-2 .sobre-el-autor p {
+  color: #161b22;
 }
 
 /*Estilos-Main-Contacto*/

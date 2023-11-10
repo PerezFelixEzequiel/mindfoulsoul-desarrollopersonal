@@ -1,6 +1,167 @@
 /*Estilos-MainRecursos*/
-.main-recursos{
+.main-recursos {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 2fr;
     grid-template-areas: "section-1 section-2";
+
+    .section-1 {
+        margin: 20px;
+
+        .section-intro {
+            h2 {
+                background-color: nth($list: $colores, $n: 2);
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            .parrafo-intro {
+                font-size: 20px;
+            }
+
+            img {
+                border: 1px solid black;
+                border-radius: 2px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .articulo-1 {
+            h3 {
+                margin: 20px 0px 0px 10px;
+                background-color: nth($list: $colores, $n: 2);
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            p {
+                margin: 10px;
+                font-size: 20px;
+            }
+        }
+
+        .articulo-2 {
+            h3 {
+                margin: 20px 0px 20px 10px;
+                background-color: nth($list: $colores, $n: 2);
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            img {
+                border: 1px solid black;
+                border-radius: 2px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .articulo-3 {
+            h3 {
+                margin: 20px 0px 20px 10px;
+                background-color: nth($list: $colores, $n: 2);
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            p {
+                margin: 10px;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .articulo-4 {
+            h3 {
+                margin: 20px 0px 20px 10px;
+                background-color: nth($list: $colores, $n: 2);
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            img {
+                border: 1px solid black;
+                border-radius: 2px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .section-2 {
+        margin: 90px 10px;
+
+        .indice-tematico {
+            position: sticky;
+            top: 20px;
+            background-color: #969689;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+            opacity: 0.7;
+            border-radius: 10px;
+            padding: 10px;
+
+            h4 {
+                padding: 10px;
+                color: nth($list: $colores, $n: 2);
+                text-decoration: underline;
+            }
+
+            ol {
+                li {
+                    padding: 10px;
+                    color: nth($list: $colores, $n: 2);
+
+                    a {
+                        color: nth($list: $colores, $n: 2);
+                    }
+                }
+            }
+        }
+
+        .sobre-el-autor {
+            position: sticky;
+            top: 300px;
+            bottom: 20px;
+            background-color: #969689;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+            opacity: 0.7;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px 0px;
+            text-align: center;
+
+            h4 {
+                color: nth($list: $colores, $n: 2);
+            }
+
+            p {
+                color: nth($list: $colores, $n: 2);
+            }
+        }
+    }
 }
