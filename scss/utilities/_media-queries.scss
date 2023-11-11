@@ -1,5 +1,7 @@
 /*Estilos-Movile*/
 @media screen and (max-width: 768px) {
+
+    /*estilos-movile-header*/
     header {
         display: flex;
         position: relative;
@@ -31,7 +33,30 @@
                             display: flex;
                             justify-content: center;
                             list-style: none;
+
+                            .nav-link {
+                                &:hover {
+                                    background-color: #969689;
+                                    color: rgb(75, 75, 75);
+                                }
+                            }
+
+                            .dropdown-menu {
+                                background-color: nth($list: $colores, $n: 2);
+                                opacity: 0.96;
+
+                                .dropdown-item {
+                                    color: #969689;
+
+                                    &:hover {
+                                        background-color: #969689;
+                                        color: rgb(75, 75, 75);
+                                    }
+                                }
+                            }
                         }
+
+
 
                     }
                 }
@@ -83,16 +108,39 @@
 
     /* main blog */
     .main-blog {
+        text-align: center;
+
+        .section-intro {
+            margin: 0px;
+
+            .text {
+                .blog-intro {
+                    font-size: 15px;
+                    padding: 0px 0px;
+                }
+            }
+        }
+
         .section-blog {
+            margin: 100px 10px 0px 10px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas: "card-1"
+            grid-template-areas:
+                "card-1"
                 "card-1"
                 "card-1"
                 "card-1"
                 "card-1"
                 "card-1";
+        }
+
+        .section-Blog-libros {
+            margin: 150px 10px 0px 10px;
+
+            .card-libros {
+                width: 150px;
+            }
         }
     }
 
@@ -163,12 +211,6 @@
                 video {
                     width: 100%;
                 }
-
-                .vista-previa {
-                    position: absolute;
-                    top: 580px;
-                    left: 30px;
-                }
             }
         }
 
@@ -186,6 +228,51 @@
     .main-contacto {
         form {
             width: auto;
+        }
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /*main recursos*/
+    .main-recursos {
+        margin: 20px;
+
+        .section-2 {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1054px) {
+        .main-inicio {
+            .section-inicio {
+                display: flex;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .section-Blog {
+                .titulo-blog-inicio {
+                    text-align: center;
+                }
+
+                .div-text {
+                    display: flex;
+                    flex-direction: column;
+
+                    video {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .section-recursos {
+                h2 {
+                    text-align: center;
+                }
+            }
         }
     }
 }

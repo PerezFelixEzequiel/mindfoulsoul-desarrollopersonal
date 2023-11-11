@@ -18,6 +18,9 @@ header {
   background-color: #161b22;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
+header .navbar-conteiner {
+  display: none;
+}
 header .hamburguer-menu {
   display: none;
 }
@@ -483,6 +486,7 @@ footer a {
 
 /*Estilos-Movile*/
 @media screen and (max-width: 768px) {
+  /*estilos-movile-header*/
   header {
     display: flex;
     position: relative;
@@ -512,6 +516,21 @@ footer a {
     display: flex;
     justify-content: center;
     list-style: none;
+  }
+  header .navbar-conteiner .collapse div .hamburguer-nav .nav-item .nav-link:hover {
+    background-color: #969689;
+    color: rgb(75, 75, 75);
+  }
+  header .navbar-conteiner .collapse div .hamburguer-nav .nav-item .dropdown-menu {
+    background-color: #161b22;
+    opacity: 0.96;
+  }
+  header .navbar-conteiner .collapse div .hamburguer-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #969689;
+  }
+  header .navbar-conteiner .collapse div .hamburguer-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #969689;
+    color: rgb(75, 75, 75);
   }
   header .navbar-conteiner .hamburguer-menu {
     display: block;
@@ -543,11 +562,28 @@ footer a {
     display: none;
   }
   /* main blog */
+  .main-blog {
+    text-align: center;
+  }
+  .main-blog .section-intro {
+    margin: 0px;
+  }
+  .main-blog .section-intro .text .blog-intro {
+    font-size: 15px;
+    padding: 0px 0px;
+  }
   .main-blog .section-blog {
+    margin: 100px 10px 0px 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "card-1" "card-1" "card-1" "card-1" "card-1" "card-1";
+  }
+  .main-blog .section-Blog-libros {
+    margin: 150px 10px 0px 10px;
+  }
+  .main-blog .section-Blog-libros .card-libros {
+    width: 150px;
   }
   /*main inicio*/
   .main-inicio {
@@ -601,11 +637,6 @@ footer a {
   .main-inicio .section-Blog .div-text video {
     width: 100%;
   }
-  .main-inicio .section-Blog .div-text .vista-previa {
-    position: absolute;
-    top: 580px;
-    left: 30px;
-  }
   .main-inicio .section-recursos {
     width: 300px;
   }
@@ -615,5 +646,35 @@ footer a {
   /*main contacto*/
   .main-contacto form {
     width: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  /*main recursos*/
+  .main-recursos {
+    margin: 20px;
+  }
+  .main-recursos .section-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 769px) and (max-width: 1054px) {
+  .main-inicio .section-inicio {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .main-inicio .section-Blog .titulo-blog-inicio {
+    text-align: center;
+  }
+  .main-inicio .section-Blog .div-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-inicio .section-Blog .div-text video {
+    width: 100%;
+  }
+  .main-inicio .section-recursos h2 {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
