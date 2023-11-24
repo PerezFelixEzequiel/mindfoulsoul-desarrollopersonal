@@ -26,7 +26,7 @@
         }
     }
 
-    .section-Blog {
+    .section-Blog-inicio {
         margin: 100px;
         background-color: nth($list: $colores, $n: 2);
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -58,20 +58,11 @@
                 overflow: hidden;
             }
 
-
-
-            .vista-previa {
-                font-size: 12px;
-                opacity: 0.3;
-                position: absolute;
-                top: 240px;
-                left: 820px;
-            }
         }
 
     }
 
-    .section-recursos {
+    .section-recursos-inicio {
         background-color: nth($list: $colores , $n: 2);
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
