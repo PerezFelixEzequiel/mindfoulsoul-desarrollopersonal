@@ -675,11 +675,6 @@ footer .container-redes a img:hover {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  .main-blog .section-sitios .article-sitios .card:hover {
-    cursor: pointer;
-    transform: scale(1.05);
   }
   .main-blog .section-sitios .article-sitios .card .ancla-movile {
     display: block;
@@ -696,17 +691,12 @@ footer .container-redes a img:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
     text-align: center;
   }
   .main-blog .section-sitios .article-sitios .card .ancla-movile .overlay p {
     font-size: 0.9rem;
     margin: 0;
     color: #969689;
-  }
-  .main-blog .section-sitios .article-sitios .card .ancla-movile .overlay:hover {
-    opacity: 1;
   }
   /*main recursos*/
   .main-recursos {
@@ -770,7 +760,7 @@ footer .container-redes a img:hover {
     display: flex;
     flex-direction: column;
   }
-  .main-recursos .section-1 {
+  .main-recursos .section-1 .section-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -778,6 +768,18 @@ footer .container-redes a img:hover {
   }
   .main-recursos .section-1 .section-intro img {
     width: 80vw;
+  }
+  .main-recursos .section-1 .articulo-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-recursos .section-1 .articulo-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .main-recursos .section-1 .articulo-2 img {
     width: 80vw;
@@ -787,9 +789,21 @@ footer .container-redes a img:hover {
     margin-left: 0;
     text-align: center;
   }
+  .main-recursos .section-1 .articulo-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .main-recursos .section-1 .articulo-3 h3 {
     width: 80vw;
     text-align: center;
+  }
+  .main-recursos .section-1 .articulo-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .main-recursos .section-1 .articulo-4 img {
     width: 80vw;
