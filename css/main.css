@@ -18,11 +18,20 @@ header {
   background-color: #161b22;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
-header .navbar-conteiner {
+header #btn-menu {
   display: none;
 }
-header .hamburguer-menu {
+header .logo-movile {
   display: none;
+}
+header .titulo-movile {
+  display: none;
+}
+header label {
+  display: none;
+}
+header label:hover {
+  cursor: pointer;
 }
 header .nav {
   display: flex;
@@ -493,6 +502,123 @@ footer a {
 /*Estilos-Movile*/
 @media screen and (max-width: 767px) {
   /*estilos-movile-header*/
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  header .logo-movile {
+    display: block;
+    width: 3.5rem;
+    filter: drop-shadow(-4px -5px 8px #000000);
+  }
+  header a {
+    text-decoration: none;
+  }
+  header a .titulo-movile {
+    display: block;
+    filter: drop-shadow(-4px -5px 8px #000000);
+    color: #969689;
+  }
+  header #btn-menu:checked ~ .nav {
+    visibility: visible;
+  }
+  header label {
+    display: block;
+    position: relative;
+  }
+  header label img {
+    width: 3.5rem;
+    filter: drop-shadow(-4px -5px 8px #000000);
+  }
+  header .nav {
+    position: absolute;
+    top: 96px;
+    right: 1px;
+    width: 100vw;
+    background-color: #161b22;
+    opacity: 0.9;
+    visibility: hidden;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+    border: none;
+  }
+  header .nav .dropdown {
+    border: none;
+  }
+  header .ancla-logo-titulo {
+    display: none;
+  }
+  /*main inicio*/
+  .main-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-inicio .section-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    height: 700px;
+    padding: 15px;
+    position: relative;
+  }
+  .main-inicio .section-inicio .carousel {
+    width: 100%;
+    order: 1;
+    border: none;
+  }
+  .main-inicio .section-inicio .carousel-control-prev {
+    z-index: 0;
+  }
+  .main-inicio .section-inicio .carousel-control-next {
+    z-index: 0;
+  }
+  .main-inicio .section-inicio .div-text h2 {
+    text-align: center;
+  }
+  .main-inicio .section-inicio .div-text .parrafo-inicio {
+    font-size: 15px;
+    color: #969689;
+    margin: 90px 0px;
+  }
+  .main-inicio .section-Blog-inicio {
+    width: 300px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+  }
+  .main-inicio .section-Blog-inicio .titulo-blog-inicio h2 {
+    text-align: center;
+  }
+  .main-inicio .section-Blog-inicio .div-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    position: relative;
+  }
+  .main-inicio .section-Blog-inicio .div-text p {
+    font-size: 15px;
+  }
+  .main-inicio .section-Blog-inicio .div-text video {
+    width: 100%;
+  }
+  .main-inicio .section-recursos-inicio {
+    width: 300px;
+  }
+  .main-inicio .section-recursos-inicio h2 {
+    text-align: center;
+  }
   /* main blog */
   .main-blog {
     display: flex;
@@ -544,84 +670,22 @@ footer a {
   .main-blog .section-sitios .article-sitios .card .ancla-movile .overlay:hover {
     opacity: 1;
   }
+  /*main contacto*/
+  .main-contacto form {
+    width: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  /*main recursos*/
+  .main-recursos {
+    margin: 20px;
+  }
+  .main-recursos .section-2 {
+    display: none;
+  }
 }
-/*main inicio*/
-.main-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main-inicio .section-inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 300px;
-  height: 700px;
-  padding: 15px;
-  position: relative;
-}
-.main-inicio .section-inicio .carousel {
-  width: 100%;
-  order: 1;
-  border: none;
-}
-.main-inicio .section-inicio .div-text h2 {
-  text-align: center;
-}
-.main-inicio .section-inicio .div-text .parrafo-inicio {
-  font-size: 15px;
-  color: #969689;
-  margin: 90px 0px;
-}
-.main-inicio .section-Blog {
-  width: 300px;
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  margin: 100px;
-}
-.main-inicio .section-Blog .titulo-blog-inicio h2 {
-  text-align: center;
-}
-.main-inicio .section-Blog .div-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-around;
-  position: relative;
-}
-.main-inicio .section-Blog .div-text p {
-  font-size: 15px;
-}
-.main-inicio .section-Blog .div-text video {
-  width: 100%;
-}
-.main-inicio .section-recursos {
-  width: 300px;
-}
-.main-inicio .section-recursos h2 {
-  text-align: center;
-}
-
-/*main contacto*/
-.main-contacto form {
-  width: auto;
-}
-
-footer {
-  text-align: center;
-}
-
-/*main recursos*/
-.main-recursos {
-  margin: 20px;
-}
-.main-recursos .section-2 {
-  display: none;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1054px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /*main-inicio-tablet*/
   .main-inicio .section-inicio {
     display: flex;
