@@ -25,21 +25,44 @@
             margin-bottom: 20px;
             padding: 7px;
             box-sizing: border-box;
-            font-size: 17px;
+            font-size: 1rem;
             border: solid 0.1px;
             background-color: #242323;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #969689;
+                color: #242323;
+            }
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
         }
 
         textarea {
             min-height: 100px;
             max-height: 200px;
             max-width: 100%;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #969689;
+                color: #242323;
+            }
         }
 
         .boton {
             border: solid 1px;
             background-color: #242323;
             padding: 20px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #969689;
+                color: #757575;
+            }
         }
     }
 }

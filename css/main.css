@@ -402,7 +402,7 @@ header .ancla-logo-titulo .titulo {
   font-size: 20px;
 }
 .main-recursos .section-2 {
-  margin: 90px 10px;
+  margin: 90px 30px;
 }
 .main-recursos .section-2 .indice-tematico {
   position: sticky;
@@ -434,7 +434,7 @@ header .ancla-logo-titulo .titulo {
   opacity: 0.7;
   border-radius: 10px;
   padding: 10px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   text-align: center;
 }
 .main-recursos .section-2 .sobre-el-autor h4 {
@@ -470,33 +470,71 @@ header .ancla-logo-titulo .titulo {
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
-  font-size: 17px;
+  font-size: 1rem;
   border: solid 0.1px;
   background-color: #242323;
+  transition: background-color 0.3s ease;
+}
+.main-contacto form .input-form:hover {
+  background-color: #969689;
+  color: #242323;
+}
+.main-contacto form .input-form:focus {
+  border: none;
+  outline: none;
 }
 .main-contacto form textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
+  transition: background-color 0.3s ease;
+}
+.main-contacto form textarea:hover {
+  background-color: #969689;
+  color: #242323;
 }
 .main-contacto form .boton {
   border: solid 1px;
   background-color: #242323;
   padding: 20px;
+  transition: background-color 0.3s ease;
+}
+.main-contacto form .boton:hover {
+  background-color: #969689;
+  color: #757575;
 }
 
 /*Estilos-Footer*/
 footer {
   padding: 40px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   background-color: #161b22;
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
 }
-footer a {
+footer .footer-informacion {
+  filter: drop-shadow(-4px -5px 8px #000000);
+}
+footer .footer-informacion a {
   text-decoration: none;
   color: #969689;
+}
+footer .container-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+footer .container-redes a img {
+  width: 50px;
+  filter: drop-shadow(-4px -5px 8px #000000);
+  opacity: 0.5;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+footer .container-redes a img:hover {
+  transform: translate(-3%);
 }
 
 /*Estilos-Movile*/
@@ -670,19 +708,41 @@ footer a {
   .main-blog .section-sitios .article-sitios .card .ancla-movile .overlay:hover {
     opacity: 1;
   }
+  /*main recursos*/
+  .main-recursos {
+    margin: 0;
+    display: flex;
+  }
+  .main-recursos .section-1 {
+    width: 100vw;
+  }
+  .main-recursos .section-1 .section-intro img {
+    width: 80vw;
+  }
+  .main-recursos .section-1 .articulo-2 img {
+    width: 80vw;
+  }
+  .main-recursos .section-1 .articulo-2 h3 {
+    width: 80vw;
+    margin-left: 0;
+    text-align: center;
+  }
+  .main-recursos .section-1 .articulo-3 h3 {
+    width: 80vw;
+    text-align: center;
+  }
+  .main-recursos .section-1 .articulo-4 img {
+    width: 80vw;
+  }
+  .main-recursos .section-2 {
+    display: none;
+  }
   /*main contacto*/
   .main-contacto form {
     width: auto;
   }
   footer {
     text-align: center;
-  }
-  /*main recursos*/
-  .main-recursos {
-    margin: 20px;
-  }
-  .main-recursos .section-2 {
-    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -704,5 +764,37 @@ footer a {
   }
   .main-inicio .section-recursos-inicio h2 {
     text-align: center;
+  }
+  /*main-recursos*/
+  .main-recursos {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-recursos .section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-recursos .section-1 .section-intro img {
+    width: 80vw;
+  }
+  .main-recursos .section-1 .articulo-2 img {
+    width: 80vw;
+  }
+  .main-recursos .section-1 .articulo-2 h3 {
+    width: 80vw;
+    margin-left: 0;
+    text-align: center;
+  }
+  .main-recursos .section-1 .articulo-3 h3 {
+    width: 80vw;
+    text-align: center;
+  }
+  .main-recursos .section-1 .articulo-4 img {
+    width: 80vw;
+  }
+  .main-recursos .section-2 {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -5,20 +5,23 @@ header {
     align-items: center;
     background-color: nth($list: $colores, $n: 2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    #btn-menu{
-        display: none;
-    }
-    .logo-movile{
+
+    #btn-menu {
         display: none;
     }
 
-    .titulo-movile{
+    .logo-movile {
         display: none;
     }
 
-    label{
+    .titulo-movile {
         display: none;
-        &:hover{
+    }
+
+    label {
+        display: none;
+
+        &:hover {
             cursor: pointer;
         }
     }
