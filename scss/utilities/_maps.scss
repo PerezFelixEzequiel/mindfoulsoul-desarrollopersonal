@@ -1,0 +1,6 @@
+$caja-titulos: (
+    bg-principal:nth($list: $colores, $n: 2),
+    shadow-principal: 4px 4px 4px rgba(0, 0, 0, 0.2),
+    border-principal: 10px,
+    bloque: inline-block,
+    )

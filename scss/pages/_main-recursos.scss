@@ -9,11 +9,11 @@
 
         .section-intro {
             h2 {
-                background-color: nth($list: $colores, $n: 2);
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
+                background-color: map-get($caja-titulos, bg-principal);
+                box-shadow: map-get($caja-titulos, shadow-principal);
+                border-radius: map-get($caja-titulos, border-principal);
+                display: map-get($caja-titulos, bloque);
                 padding: 10px;
-                display: inline-block;
             }
 
             .parrafo-intro {
@@ -30,11 +30,11 @@
         .articulo-1 {
             h3 {
                 margin: 20px 0px 0px 10px;
-                background-color: nth($list: $colores, $n: 2);
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
+                background-color: map-get($caja-titulos, bg-principal);
+                box-shadow: map-get($caja-titulos, shadow-principal);
+                border-radius: map-get($caja-titulos, border-principal);
+                display: map-get($caja-titulos, bloque);
                 padding: 10px;
-                display: inline-block;
             }
 
             p {
@@ -46,11 +46,11 @@
         .articulo-2 {
             h3 {
                 margin: 20px 0px 20px 10px;
-                background-color: nth($list: $colores, $n: 2);
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
+                background-color: map-get($caja-titulos, bg-principal);
+                box-shadow: map-get($caja-titulos, shadow-principal);
+                border-radius: map-get($caja-titulos, border-principal);
+                display: map-get($caja-titulos, bloque);
                 padding: 10px;
-                display: inline-block;
             }
 
             img {
@@ -70,11 +70,11 @@
         .articulo-3 {
             h3 {
                 margin: 20px 0px 20px 10px;
-                background-color: nth($list: $colores, $n: 2);
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
+                background-color: map-get($caja-titulos, bg-principal);
+                box-shadow: map-get($caja-titulos, shadow-principal);
+                border-radius: map-get($caja-titulos, border-principal);
+                display: map-get($caja-titulos, bloque);
                 padding: 10px;
-                display: inline-block;
             }
 
             p {
@@ -92,11 +92,12 @@
         .articulo-4 {
             h3 {
                 margin: 20px 0px 20px 10px;
-                background-color: nth($list: $colores, $n: 2);
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-                border-radius: 10px;
+                background-color: map-get($caja-titulos, bg-principal);
+                box-shadow: map-get($caja-titulos, shadow-principal);
+                border-radius: map-get($caja-titulos, border-principal);
+                display: map-get($caja-titulos, bloque);
                 padding: 10px;
-                display: inline-block;
+
             }
 
             img {

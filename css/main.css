@@ -238,13 +238,14 @@ header .ancla-logo-titulo .titulo {
   padding: 4px;
   color: rgb(129, 126, 126);
 }
-.main-blog .titulos-blog {
+.main-blog .titulos-libros {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin: 20px;
   padding: 10px;
   display: inline-block;
+  text-align: center;
 }
 .main-blog .section-libros {
   border-left: 3px solid #969689;
@@ -328,8 +329,8 @@ header .ancla-logo-titulo .titulo {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px;
   display: inline-block;
+  padding: 10px;
 }
 .main-recursos .section-1 .section-intro .parrafo-intro {
   font-size: 20px;
@@ -344,8 +345,8 @@ header .ancla-logo-titulo .titulo {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px;
   display: inline-block;
+  padding: 10px;
 }
 .main-recursos .section-1 .articulo-1 p {
   margin: 10px;
@@ -356,8 +357,8 @@ header .ancla-logo-titulo .titulo {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px;
   display: inline-block;
+  padding: 10px;
 }
 .main-recursos .section-1 .articulo-2 img {
   border: 1px solid black;
@@ -373,8 +374,8 @@ header .ancla-logo-titulo .titulo {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px;
   display: inline-block;
+  padding: 10px;
 }
 .main-recursos .section-1 .articulo-3 p {
   margin: 10px;
@@ -388,8 +389,8 @@ header .ancla-logo-titulo .titulo {
   background-color: #161b22;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px;
   display: inline-block;
+  padding: 10px;
 }
 .main-recursos .section-1 .articulo-4 img {
   border: 1px solid black;
